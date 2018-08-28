@@ -1,0 +1,9 @@
+development:
+  adapter: async
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://ttfbstaging-radis-001.wtkcvf.0001.use1.cache.amazonaws.com:6379

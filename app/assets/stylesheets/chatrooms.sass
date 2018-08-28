@@ -1,0 +1,514 @@
+$border-color: #808080
+$light-gray: #f1f1f1
+$fc-4d: #4d4d4d
+
+.list-group-item
+  border: none !important
+
+#app
+  font-weight: 300
+
+.r110
+  right: 110px !important
+.r300
+  right: 300px !important
+
+.r370
+  right: 370px !important
+
+.flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex !important
+
+.row
+  margin: 0
+
+.container-fluid
+  padding: 0
+
+input:focus
+  outline: none
+
+
+.header
+  height: 80px
+  border-bottom: 1px solid $border-color
+  .logo
+    cursor: pointer
+    img
+      height: 50px
+      margin: 15px
+  .user
+    display: block
+    .user-name,.user-login,.user-image
+      display: inline-block
+    img
+      width: 30px
+      height: 30px
+      margin-top: 30px
+      margin-right: 20px
+    .user-login
+      cursor: pointer
+      margin-right: 10px
+      margin-top: 35px
+      border-left: 1px solid $border-color
+      padding-left: 10px
+      color: $fc-4d
+    .user-login:hover
+      color: #c0272d
+    .user-name
+      color: $fc-4d
+      margin-top: 35px
+      margin-right: 10px
+
+.side-bar
+  width: 100%
+  height: auto
+  // border-right: 1px solid $border-color
+  .search-wrap
+    padding-left: 20px
+    width: 100%
+    height: 50px
+    border-bottom: 1px solid $border-color
+    border-right: none
+    .search-wrap-box
+      margin-top: 20px
+      border-radius: 20px
+      input
+        width: 100%
+        background-color: $light-gray
+        border: none
+        border-radius: 20px
+        padding-left: 30px
+        height: 30px
+      .fa-search
+        position: absolute
+        margin-top: 6px
+        margin-left: 10px
+        color: gray
+
+  .menu-wrap
+    width: 100%
+    height: 40px
+    font-size: 18px
+    color: #5078a5
+    border-bottom: 1px solid $border-color
+    p
+      letter-spacing: 0.05em
+      margin-top: 6px
+      margin-bottom: 0
+      font-weight: normal !important
+      cursor: pointer
+
+    .fa-bars
+      margin: 10px 10px 10px 20px
+      cursor: pointer
+
+  .menu-fixed
+    position: fixed
+    width: 300px
+    z-index: 10
+    background-color: white
+    padding: 0
+    left: 20px
+    list-style: none
+    box-shadow: 0 0 20px gray
+    border-radius: 20px
+    &:hover
+      overflow: hidden
+      background-color:
+    li
+      height: 50px
+      list-style: none
+      border-bottom: 1px solid $fc-4d
+      p
+        padding: 15px
+        margin: 0
+        font-size: 16px
+        color: $fc-4d
+        letter-spacing: 1px
+        font-weight: 300
+
+    li:hover
+      background-color: $light-gray
+
+
+
+  .user-list
+    width: 100%
+    .user-list-wrap
+      border-bottom: 1px solid $border-color !important
+    li
+      padding: 0 20px
+      height: 70px
+
+    li:hover
+      background-color: $light-gray
+    .user-list-name
+      font-size: 16px
+      font-weight: bold
+      color: $fc-4d
+    .user-list-message
+      font-size: 12px
+      color: $fc-4d
+    .user-list-img-big
+      height: 50px !important
+      width: 50px !important
+      margin-top: 10px
+    .user-list-img-small
+      width: 20px !important
+      margin-left: 100px !important
+    .user-list-last
+
+    div
+      .user-list-time
+        font-size: 12px
+        color: $fc-4d
+      img
+        width: 20px
+        height: 20px
+        margin-left: 100px
+        border-radius: 20px
+      p
+        margin: 10px 0 0 0
+        font-size: 12px
+        text-align: right
+        color: $fc-4d
+
+.user-top
+  .user-top-left
+    height: 80px
+    img
+      width: 60px
+      height: 60px
+      margin-top: 10px
+    h4
+      padding-top: 15px
+      margin-left: 15px
+      font-size: 22px
+      font-weight: bold
+      color: gray
+      p
+        font-weight: 300
+        font-size: 14px
+        margin-top: 2px
+
+  .user-top-right
+    .service-appoint
+      display: none
+    .img-user
+      height: 30px
+      width: 30px
+      border-radius: 25px
+      margin-top: 25px
+
+    div
+      margin-left: 10px
+      .service-name
+        margin-bottom: 0
+        margin-top: 16px
+        color: $fc-4d
+      .service-time
+        color: #c0272d
+        margin-bottom: 0 !important
+
+    #pic-appoint
+      cursor: pointer
+      height: 30px
+      margin-top: 25px
+      margin-left: 20px
+      margin-right: 2px
+    #btn-appoint
+      margin-right: 20px
+      height: 30px
+      background-color: white
+      border-radius: 20px
+      margin-top: 25px
+      color: $fc-4d
+      border: 1px solid #5078a5
+      cursor: pointer
+      width: 80px
+      &:focus
+        outline: none
+    #btn-info
+      cursor: pointer
+      margin-top: 25px
+      margin-right: 20px
+      width: 30px
+      height: 30px
+
+
+
+
+
+  .user-message
+    width: 100%
+    height: 100%
+
+  .user-content
+    height: 100%
+    position: fixed
+    // background-color: gray
+    right: 0
+    left: 25%
+    .user-content-space
+      width: 100%
+      height: 10px
+    .user-content-message
+      overflow-y: scroll
+      right: 0
+      left: 25%
+      top: 161px
+      bottom: 70px
+      padding-bottom: 20px
+      position: fixed
+      border-left: 1px solid #808080
+    .user-content-message-left
+      padding-left: 40px
+      img
+        width: 50px
+        height: 50px
+        margin: 10px 10px 10px 0
+      p
+        width: auto
+        height: 30px
+        background-color: $light-gray
+        margin: 20px 0
+        padding: 2px 10px
+        border-radius: 20px
+      span
+        margin-left: 10px
+        margin-top: 24px
+    .user-content-message-right
+      padding-right: 40px
+      img
+        width: 50px
+        height: 50px
+        margin: 10px 0px 10px 10px
+      p
+        width: auto
+        height: 30px
+        background-color: $light-gray
+        margin: 20px 0
+        padding: 2px 10px
+        border-radius: 20px
+      span
+        margin-right: 10px
+        margin-top: 24px
+  .user-content-message-submit
+    position: fixed
+    bottom: 0
+    left: 25%
+    right: 0
+    padding-bottom: 20px
+    padding-top: 10px
+    border-left: 1px solid #808080
+    .btn-add
+      width: 40px
+      height: 40px
+      margin-right: 20px
+      margin-left: 40px
+      cursor: pointer
+    input[type="file"]
+      position: fixed
+      right: 100%
+      bottom: 100%
+    .UCMS-inputMessage
+      width: 100%
+    #main-message
+      width: 100%
+      padding-left: 10px
+      border-radius: 20px
+      background-color: $light-gray
+      border: none
+      height: 40px
+
+    .btn-submit
+      width: 30px
+      height: 30px
+      margin-left: 20px
+      margin-top: 4px
+      margin-right: 20px
+      cursor: pointer
+    #btn-endService
+      width: 70px
+      height: 30px
+      border-radius: 20px
+      border: 1px solid #C0272D
+      color: #C0272D
+      cursor: pointer
+      padding: 5px
+      font-size: 12px
+      margin-top: 4px
+      outline: none
+      margin-right: 40px
+      background-color: #fff
+
+  .user-info
+    width: 300px
+    height: 100%
+    position: fixed
+    right: 0
+    border-left: 1px solid $border-color
+    padding: 20px
+    .user-info-space
+      width: 100%
+      height: 10px
+    .user-image
+      img
+        width: 80px
+        height: 80px
+      div
+        padding-top: 25px
+        padding-left: 15px
+        #btn-addContactPerson
+          width: 100px
+          height: 20px
+          border-radius: 20px
+          border: 1px solid #5078a5
+          background-color: #fff
+          font-size: 12px
+          color: $fc-4d
+          cursor: pointer
+          outline: none
+          padding-bottom: 19px
+          .fa-plus
+            font-weight: 300
+            color: #5078a5
+            margin-right: 5px
+            outline: none
+        #btn-addContactPerson:hover
+          transition: .3s 
+          background-color: #5078a5
+          color: #fff
+          .fa-plus
+            color: #fff
+    .user-message
+      margin-top: 40px
+      img
+        width: 20px
+        height: 20px
+      input
+        width: 95px
+        background-color: $light-gray
+        border: none
+        border-radius: 20px
+        padding-left: 10px
+      #message
+        margin-left: 10px
+        margin-right: 10px
+      #space
+        margin-left: 5px
+    .user-detail
+      input
+        background-color: $light-gray
+        border: none
+        border-radius: 20px
+        margin-left: 10px
+        width: 180px !important
+        padding-left: 10px
+      .user-city
+        margin-top: 20px
+      .user-number
+        margin-top: 20px
+      .user-email
+        margin-top: 20px
+
+    .user-tag
+      margin-top: 20px
+      img
+        cursor: pointer
+        width: 20px
+        height: 20px
+        margin-left: 10px
+        margin-top: -4px
+    .user-tag-add
+      margin-top: 20px
+      display: inline
+      input
+        width: 150px !important
+        margin-left: 10px
+      img
+        margin-bottom: 4px
+        margin-left: -25px
+        margin-top: 1px
+    .user-tag-list
+      margin-top: 20px
+      display: inline-block
+      .user-tag-list-button
+        width: auto
+        border: 1px solid #5078a5
+        margin-right: 10px
+        outline: none
+        border-radius: 20px
+        font-size: 14px
+        height: 20px
+        color: $fc-4d
+        p
+          margin-top: -3px
+          font-weight: 300
+        #btn-delete
+          cursor: pointer
+          width: 10px
+          height: 10px
+          margin-left: 10px
+          margin-top: 3px
+          background-size: cover
+          background-image: url('https://i.imgur.com/qBAbUbK.png')
+          &:hover
+            background-size: cover
+            background-image: url('https://i.imgur.com/EccS7aK.png')
+
+.partner
+  position: fixed
+  width: 300px
+  height: auto
+  background-color: #fff
+  z-index: 10
+  right: 30px
+  border-radius: 25px
+  box-shadow: 0 0 20px gray
+  &:hover
+    overflow: hidden
+  input
+    background-color: $light-gray
+    width: 280px
+    border: none
+    border-radius: 20px
+    height: 30px
+    padding-left: 30px
+    margin: 10px
+  .fa-search
+    position: absolute
+    margin-top: 17px
+    margin-left: 20px
+    color: gray
+  ul
+    padding: 0
+    margin: 0
+    border-radius: 25px
+  li
+    height: 50px
+    list-style: none
+    padding: 10px
+    overflow: hidden
+    border-top: 1px solid $border-color
+    &:hover
+      overflow: hidden
+      background-color: $light-gray
+    img
+      width: 35px
+      height: 35px
+      border-radius: 25px
+      margin: -2.5px 10px -2.5px 0
+    p
+      margin-top: 3px
+      margin-bottom: 0
+    button
+     margin-right: 15px
+     background-color: #fff
+     border-radius: 10px
+     font-size: 14px
+     outline: none !important
+     border: 1px solid #d1d1d1

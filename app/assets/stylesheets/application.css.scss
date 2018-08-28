@@ -1,0 +1,40 @@
+@import "bootstrap";
+
+$primary-dark:#5078A5;
+$primary-light:#eeeeef;
+
+body{
+
+	.icon{
+	  padding: 5px 10px;
+	  font-size: 0.8rem;
+	  border-radius:19.5px;
+	}
+	.icon-dark{
+	  background-color: $primary-dark;
+	  color: #fff;
+	}
+	.icon-light{
+	  background-color: $primary-light;
+	  color: #000;
+	  // border: 1px solid $primary-dark;
+	}
+
+	.br-primary{
+	  border-radius:19.5px;
+	}
+	.clickable{
+		cursor: pointer;
+	}
+	.shadow {
+	  // box-shadow: 3px 5px 5px 0px rgba(121,121,122,1);
+	  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  	  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.font-small{
+	  font-size: 0.8rem;
+	}
+}
+// body {
+// 	color: #727171 !important;
+// }
